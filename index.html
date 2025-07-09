@@ -11,15 +11,14 @@
 <body>
     <a-scene embedded arjs>
         <a-marker type="pattern" url="./pattern.patt">
-            <a-entity rotation = "-90 0 0">                
-                <a-entity
-                    gltf-model="./AmongUs_Animation.glb"
-                    animation-mixer
-                    scale = "1 1 1"
-                    position="0 0 0 ">
-                </a-entity>
+                        
+            <a-entity
+                gltf-model="./AmongUs_Animation.glb"
+                animation-mixer="clip: *"
+                scale = "1 1 1"
+                position="0 0 0 ">
             </a-entity>
-
+            
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
